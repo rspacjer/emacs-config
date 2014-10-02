@@ -55,3 +55,6 @@
 (if (find-font (font-spec :name "Consolas")) 
   (set-face-attribute 'default nil
                       :family "Consolas" :height 120))
+
+(require 'powerline)
+(powerline-default-theme)
