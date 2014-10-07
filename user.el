@@ -6,6 +6,10 @@
     (setenv "PATH" path-from-shell)
     (setq exec-path (split-string path-from-shell path-separator))))
 
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
@@ -24,6 +28,7 @@
 ;; 
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
+
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
 ;; shell scripts
@@ -38,7 +43,7 @@
 (load-theme 'tomorrow-night-bright t)
 
 ;; Flyspell often slows down editing so it's turned off
-;; (remove-hook 'text-mode-hook 'turn-on-flyspell)
+(remove-hook 'text-mode-hook 'turn-on-flyspell)
 
 ;; hippie expand - don't try to complete with file names
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name hippie-expand-try-functions-list))
@@ -49,12 +54,14 @@
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-(load "~/.emacs.d/vendor/clojure")
-
 ;; Use 10-pt Consolas as default font
 (if (find-font (font-spec :name "Consolas")) 
   (set-face-attribute 'default nil
                       :family "Consolas" :height 120))
 
+;; Set powerline
 (require 'powerline)
 (powerline-default-theme)
+
+(load "~/.emacs.d/settings/clojure")
+(load "~/.emacs.d/settings/markdown")
