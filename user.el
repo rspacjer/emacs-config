@@ -63,5 +63,7 @@
 (require 'powerline)
 (powerline-default-theme)
 
+(add-to-list 'load-path "~/.emacs.d/settings")
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
+(load "~/.emacs.d/settings/javascript")
