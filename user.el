@@ -1,5 +1,9 @@
 ;; This is where your customizations should live
 
+;; Add open recent menu
+(require 'recentf)
+(recentf-mode 1)
+
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
@@ -67,14 +71,7 @@
 (powerline-default-theme)
 
 (add-to-list 'load-path "~/.emacs.d/settings")
+(load "~/.emacs.d/settings/yasnippet")
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
 (load "~/.emacs.d/settings/javascript")
-
-(require 'yasnippet) ;; not yasnippet-bundle
-(yas-global-mode 1)
-
-;; Load snippets
-(when (require 'yasnippet nil 'noerror)
-  (progn
-    (yas/load-directory "~/.emacs.d/snippets")))
