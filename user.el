@@ -59,6 +59,9 @@
   (set-face-attribute 'default nil
                       :family "Consolas" :height 120))
 
+;; set cursor as |
+(setq-default cursor-type 'bar)
+
 ;; Set powerline
 (require 'powerline)
 (powerline-default-theme)
@@ -67,3 +70,11 @@
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
 (load "~/.emacs.d/settings/javascript")
+
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas-global-mode 1)
+
+;; Load snippets
+(when (require 'yasnippet nil 'noerror)
+  (progn
+    (yas/load-directory "~/.emacs.d/snippets")))

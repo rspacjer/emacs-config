@@ -1,14 +1,22 @@
-((("data-formatter" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("test" .
-   [0 0 0 1])
-  ("tego" .
-   [0 0 1 0])
-  ("owego" .
-   [0 0 0 1 0])
-  ("fajnie" .
-   [0 0 0 1 0 0])
+((("doall" .
+   [0 0 1 0 0])
+  ("http-get" .
+   [0 0 0 0 0 1 0 0])
+  ("let" .
+   [0 0 1])
+  ("download" .
+   [0 0 0 0 0 1 0 0])
+  ("tojestbardzodlugieslowo" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("dziala" .
    [0 0 1 0 0 0])
-  ("tojestbardzodlugieslowo" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("fajnie" .
+   [0 0 0 1 0 0])
+  ("owego" .
+   [0 0 0 1 0])
+  ("tego" .
+   [0 0 1 0])
+  ("test" .
+   [0 0 0 1])
+  ("data-formatter" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])))

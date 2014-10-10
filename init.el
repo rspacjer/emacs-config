@@ -23,6 +23,7 @@
     js2-refactor
     ac-js2
     markdown-mode
+    yasnippet
   ) "a list of packages to ensure are installed at launch.")
 
 ; method to check if all packages are installed
