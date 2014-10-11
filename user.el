@@ -6,7 +6,7 @@
 
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
-  (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+  (let ((path-from-shell (shell-command-to-string "$SHELL 2-i -c 'echo $PATH'")))
     (setenv "PATH" path-from-shell)
     (setq exec-path (split-string path-from-shell path-separator))))
 
@@ -71,7 +71,7 @@
 (powerline-default-theme)
 
 (add-to-list 'load-path "~/.emacs.d/settings")
-(load "~/.emacs.d/settings/yasnippet")
+;;(load "~/.emacs.d/settings/yasnippet")
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
 (load "~/.emacs.d/settings/javascript")
