@@ -75,3 +75,5 @@
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
 (load "~/.emacs.d/settings/javascript")
+(load "~/.emacs.d/settings/csharp")
+
