@@ -14,10 +14,12 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; Disable right alt key as a modifier key - to use it for polish characters 
+(setq ns-right-alternate-modifier nil)
+
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
-
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40)))
 
 ;; highlight matched brackets
