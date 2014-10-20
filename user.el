@@ -4,15 +4,6 @@
 (require 'recentf)
 (recentf-mode 1)
 
-;; display any item that contains the chars you typed
-(setq ido-enable-flex-matching t)
-;; Use ido everywhere
-(setq ido-everywhere t)
-;; Prevent emacs of adding the current word to any command buffer
-(setq ido-use-filename-at-point nil)
-;; Make buffer switch command auto suggestions, also for find-file command
-(ido-mode 1)
-
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL 2-i -c 'echo $PATH'")))
@@ -30,6 +21,19 @@
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40)))
+
+;; display any item that contains the chars you typed
+(setq ido-enable-flex-matching t)
+;; Use ido everywhere
+(setq ido-everywhere t)
+;; Prevent emacs of adding the current word to any command buffer
+(setq ido-use-filename-at-point nil)
+;; Make buffer switch command auto suggestions, also for find-file command
+(ido-mode 1)
+
+;; Enable WindMove - change buffers with shift + <arrow key>
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
 
 ;; highlight matched brackets
 (show-paren-mode 1)
