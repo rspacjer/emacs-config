@@ -4,6 +4,15 @@
 (require 'recentf)
 (recentf-mode 1)
 
+;; display any item that contains the chars you typed
+(setq ido-enable-flex-matching t)
+;; Use ido everywhere
+(setq ido-everywhere t)
+;; Prevent emacs of adding the current word to any command buffer
+(setq ido-use-filename-at-point nil)
+;; Make buffer switch command auto suggestions, also for find-file command
+(ido-mode 1)
+
 ;; env PATH
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (shell-command-to-string "$SHELL 2-i -c 'echo $PATH'")))
@@ -59,8 +68,6 @@
 ;; hippie expand - don't try to complete with file names
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name hippie-expand-try-functions-list))
 (setq hippie-expand-try-functions-list (delete 'try-complete-file-name-partially hippie-expand-try-functions-list))
-
-(setq ido-use-filename-at-point nil)
 
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
