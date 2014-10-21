@@ -31,9 +31,12 @@
 ;; Make buffer switch command auto suggestions, also for find-file command
 (ido-mode 1)
 
-;; Enable WindMove - change buffers with shift + <arrow key>
+;; Enable WindMove - change buffers with C-c + <arrow key>
 (when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings))
+  (global-set-key (kbd "C-c <left>")  'windmove-left)
+  (global-set-key (kbd "C-c <right>") 'windmove-right)
+  (global-set-key (kbd "C-c <up>")    'windmove-up)
+  (global-set-key (kbd "C-c <down>")  'windmove-down))
 
 ;; highlight matched brackets
 (show-paren-mode 1)
