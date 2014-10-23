@@ -1,6 +1,8 @@
 # Basic Emacs configuration#
 
-This configuration is based on ["Emacs for Clojure Starter Kit"](https://github.com/flyingmachine/emacs-for-clojure) repo.
+This configuration is based on other configurations:
+["Emacs for Clojure Starter Kit"](https://github.com/flyingmachine/emacs-for-clojure)
+["Emacs Prelude"](https://github.com/bbatsov/prelude)
 
 ### Installation ###
 

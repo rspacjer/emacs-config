@@ -44,6 +44,12 @@
 ;; disable wrapping lines
 (setq-default truncate-lines t)
 
+;; enable cua mode (windows like copy, cut, paste)
+(cua-mode t)
+;;(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+;;(transient-mark-mode 1) ;; No region when it is not highlighted
+;;(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
 ;; Place downloaded elisp files in this directory. You'll then be able
 ;; to load them.
 ;;
@@ -92,6 +98,7 @@
 (powerline-default-theme)
 
 (add-to-list 'load-path "~/.emacs.d/settings")
+(load "~/.emacs.d/settings/features")
 ;;(load "~/.emacs.d/settings/yasnippet")
 (load "~/.emacs.d/settings/clojure")
 (load "~/.emacs.d/settings/markdown")
