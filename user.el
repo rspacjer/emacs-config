@@ -105,6 +105,9 @@
 # If you want to create a file, visit that file with C-x C-f,
 # then enter the text in that file's own buffer.")
 
+;; warn when opening files bigger than 100MB
+(setq large-file-warning-threshold 100000000)
+
 (add-to-list 'load-path "~/.emacs.d/settings")
 (load "~/.emacs.d/settings/features")
 ;;(load "~/.emacs.d/settings/yasnippet")
