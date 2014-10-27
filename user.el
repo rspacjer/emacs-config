@@ -97,6 +97,14 @@
 (require 'powerline)
 (powerline-default-theme)
 
+;;starting with scratch notes
+(setq inhibit-startup-message t)
+(setq initial-major-mode 'text-mode)
+(setq initial-scratch-message "\
+# This buffer is for notes you don't want to save.
+# If you want to create a file, visit that file with C-x C-f,
+# then enter the text in that file's own buffer.")
+
 (add-to-list 'load-path "~/.emacs.d/settings")
 (load "~/.emacs.d/settings/features")
 ;;(load "~/.emacs.d/settings/yasnippet")
