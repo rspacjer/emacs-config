@@ -1,17 +1,35 @@
-(add-hook 'js-mode-hook 'js2-minor-mode)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
+;; js2-mode
+(require 'js2-mode)
+
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+;; Alternative js2-mode extensions
+(add-to-list 'auto-mode-alist '("\\.es6\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.ejs\\'" . js2-mode))
+
+;; Use plain old js-mode for JSON, js2-mode doth protest too much
+(add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
+
+;;(add-hook 'js2-mode-hook 'ac-js2-mode)
+;;(add-hook 'js2-mode-hook 'js2-refactor)
 
 (setq js2-highlight-level 3)
 
-(setq-default js2-mode-indent-ignore-first-tab t)
-(setq-default js2-show-parse-errors nil)
-(setq-default js2-strict-inconsistent-return-warning nil)
-(setq-default js2-strict-var-hides-function-arg-warning nil)
-(setq-default js2-strict-missing-semi-warning nil)
-(setq-default js2-strict-trailing-comma-warning nil)
-(setq-default js2-strict-cond-assign-warning nil)
-(setq-default js2-strict-var-redeclaration-warning nil)
-(setq-default js2-global-externs
-      '("module" "require" "__dirname" "process" "console" "define"
-        "JSON" "$" "_" "Backbone" "buster" "sinon" "moment" "_gaq"
-        "Zenbox" "Mousetrap" "Comoyo"))
+(custom-set-faces
+ '(js2-external-variable ((t (:foreground "OrangeRed1" :underline t)))))
+
+;; from http://rawsyntax.com/blog/learn-emacs-editing-javascript/
+(defun scratch-js ()
+  "Create or switch to a javascript mode scratch buffer"
+  (interactive)
+ 
+  (if (not (eq nil (get-buffer "scratch-js")))
+      (switch-to-buffer "scratch-js")
+    (set-buffer (get-buffer-create "scratch-js"))
+    (js2-mode)
+    (switch-to-buffer "scratch-js")))
+
+
+;; js2-refactor
+(require 'js2-refactor)
+(js2r-add-keybindings-with-prefix "C-c C-m")

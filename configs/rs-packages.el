@@ -25,7 +25,8 @@
     markdown-mode
     yasnippet
     clojure-snippets
-    expand-region)
+    expand-region
+    multiple-cursors)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
