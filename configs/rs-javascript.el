@@ -18,18 +18,4 @@
 (custom-set-faces
  '(js2-external-variable ((t (:foreground "OrangeRed1" :underline t)))))
 
-;; from http://rawsyntax.com/blog/learn-emacs-editing-javascript/
-(defun scratch-js ()
-  "Create or switch to a javascript mode scratch buffer"
-  (interactive)
- 
-  (if (not (eq nil (get-buffer "scratch-js")))
-      (switch-to-buffer "scratch-js")
-    (set-buffer (get-buffer-create "scratch-js"))
-    (js2-mode)
-    (switch-to-buffer "scratch-js")))
 
-
-;; js2-refactor
-(require 'js2-refactor)
-(js2r-add-keybindings-with-prefix "C-c C-m")
