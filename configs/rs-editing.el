@@ -13,3 +13,8 @@
 ;; enable expand region for C-=
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+;; guru mode - to warn me about using arrows! Lets learn Emacs key bindings
+(require 'guru-mode)
+(setq guru-warn-only t)
+(guru-global-mode +1)

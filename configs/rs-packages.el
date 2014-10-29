@@ -26,7 +26,8 @@
     yasnippet
     clojure-snippets
     expand-region
-    multiple-cursors)
+    multiple-cursors
+    guru-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
