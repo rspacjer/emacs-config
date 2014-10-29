@@ -27,7 +27,7 @@
     clojure-snippets
     expand-region
     multiple-cursors
-    guru-mode)
+    browse-kill-ring )
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
