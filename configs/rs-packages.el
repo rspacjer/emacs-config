@@ -27,7 +27,10 @@
     clojure-snippets
     expand-region
     multiple-cursors
-    browse-kill-ring )
+    browse-kill-ring
+    flx
+    flx-ido
+    projectile)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
