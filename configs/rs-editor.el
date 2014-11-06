@@ -36,7 +36,10 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 ;; disable wrapping lines
-(setq-default truncate-lines t)
+;;(setq-default truncate-lines t)
+
+;;wrap lines
+(global-visual-line-mode 1)
 
 ;; enable WindMove - change buffers with C-c + <arrow key>
 (when (fboundp 'windmove-default-keybindings)
@@ -44,3 +47,8 @@
   (global-set-key (kbd "C-c <right>") 'windmove-right)
   (global-set-key (kbd "C-c <up>")    'windmove-up)
   (global-set-key (kbd "C-c <down>")  'windmove-down))
+
+;; mode line settings
+(line-number-mode t)
+(column-number-mode t)
+(size-indication-mode t)
