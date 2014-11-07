@@ -48,7 +48,11 @@
   (global-set-key (kbd "C-c <up>")    'windmove-up)
   (global-set-key (kbd "C-c <down>")  'windmove-down))
 
+;; show line numbers for prog modes
+(add-hook 'prog-mode-hook
+	  (lambda ()	    
+	    (global-linum-mode 1)))
+
 ;; mode line settings
-(line-number-mode t)
 (column-number-mode t)
 (size-indication-mode t)
