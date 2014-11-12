@@ -10,6 +10,7 @@
 (load "~/.emacs.d/configs/rs-ido")
 (load "~/.emacs.d/configs/rs-shell")
 (load "~/.emacs.d/configs/rs-irc")
+(load "~/.emacs.d/configs/rs-org")
 (load "~/.emacs.d/configs/rs-clojure")
 (load "~/.emacs.d/configs/rs-markdown")
 (load "~/.emacs.d/configs/rs-javascript")
