@@ -16,6 +16,7 @@
     cider
     clojure-mode
     clojure-mode-extra-font-locking
+    csharp-mode
     paredit
     ac-cider
     rainbow-delimiters
@@ -30,7 +31,9 @@
     browse-kill-ring
     flx
     flx-ido
-    projectile)
+    projectile
+    rfringe
+    web-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
