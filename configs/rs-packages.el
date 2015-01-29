@@ -33,7 +33,8 @@
     flx-ido
     projectile
     rfringe
-    web-mode)
+    web-mode
+    guru-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
