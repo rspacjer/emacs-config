@@ -4,7 +4,7 @@
 (add-to-list 'package-archives
              '("gnu" . "http://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives
-              '("melpa" . "http://melpa.org/packages/") t)
+	     '("stable-melpa" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;; from Emacs Prelude by Bozhidar Batsov
@@ -21,8 +21,8 @@
     ac-cider
     rainbow-delimiters
     js2-mode
-    js2-refactor
-    ac-js2
+;;    js2-refactor
+;;    ac-js2
     markdown-mode
     yasnippet
     clojure-snippets
@@ -32,7 +32,7 @@
     flx
     flx-ido
     projectile
-    rfringe
+;;    rfringe
     web-mode
     guru-mode)
   "A list of packages to ensure are installed at launch.")
