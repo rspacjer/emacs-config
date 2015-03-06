@@ -3,3 +3,5 @@
 (add-to-list 'load-path "~/.emacs.d/themes")
 
 (load-theme 'tomorrow-night-bright t)
+
+(provide 'rs-themes)

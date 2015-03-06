@@ -65,3 +65,5 @@ Missing packages are installed automatically."
 
 ;; run package installation
 (prelude-install-packages)
+
+(provide 'rs-packages)

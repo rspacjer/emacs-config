@@ -51,6 +51,8 @@
 (global-set-key (kbd "C-x C-;") 'comment-region)
 
 ;;guru mode
-(require 'guru-mode)
-(guru-global-mode +1)
+;;(require 'guru-mode)
+;;(guru-global-mode +1)
 ;; (setq guru-warn-only t) ; to only warn about key bindings
+
+(provide 'rs-editing)

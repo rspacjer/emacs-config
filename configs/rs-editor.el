@@ -3,8 +3,12 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; init frame size of Emacs
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40)))
+;; init frame size of Emacs for window system
+(when window-system
+  (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  (tooltip-mode -1)
+  (mouse-wheel-mode t)
+  (setq initial-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40))))
 
 ;; add open recent menu
 (require 'recentf)
@@ -56,3 +60,8 @@
 ;; mode line settings
 (column-number-mode t)
 (size-indication-mode t)
+
+;; Show current function in modeline.
+(which-function-mode)
+
+(provide 'rs-editor)

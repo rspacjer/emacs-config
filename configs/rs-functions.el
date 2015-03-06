@@ -10,3 +10,5 @@ Doesn't mess with special buffers."
      (-filter #'buffer-file-name)
      (--remove (eql (current-buffer) it)))
    #'kill-buffer))
+
+(provide 'rs-functions)

@@ -10,3 +10,5 @@
 (setq ido-enable-flex-matching t)
 ;; Prevent emacs of adding the current word to any command buffer
 (setq ido-use-filename-at-point nil)
+
+(provide 'rs-ido)

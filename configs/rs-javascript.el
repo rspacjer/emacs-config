@@ -18,4 +18,4 @@
 (custom-set-faces
  '(js2-external-variable ((t (:foreground "OrangeRed1" :underline t)))))
 
-
+(provide 'rs-javascript)

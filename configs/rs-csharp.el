@@ -11,3 +11,5 @@
 (add-hook  'csharp-mode-hook 'my-csharp-mode-fn t)
 
 (add-to-list 'auto-mode-alist '("\\.cshtml$" . web-mode))
+
+(provide 'rs-csharp)
