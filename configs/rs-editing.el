@@ -39,13 +39,24 @@
 
 ;; delete the selection with a keypress
 (delete-selection-mode t)
+;; Transient Mark mode gives you much of the standard selection-highlighting behavior of other editors
+(transient-mark-mode t)
 
 ;; Multiple cursors configuration
+;; From: https://github.com/bodil/ohai-emacs/
+;; Use <insert> to place a cursor on the next match for the current selection.
+;; Use S-<insert> to place one on the previous match.
+;; Use C-' to use extended mark mode, giving you more control.
+;; Use C-" to place cursors on all matches.
+;; Select a region and C-M-' to place cursors on each line of the selection.
+;; Bonus: <insert> key no longer activates overwrite mode.
+;; What is that thing for anyway?
 (require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "<insert>") 'mc/mark-next-like-this)
+(global-set-key (kbd "S-<insert>") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-'") 'mc/mark-more-like-this-extended)
+(global-set-key (kbd "C-\"") 'mc/mark-all-like-this-dwim)
+(global-set-key (kbd "C-M-'") 'mc/edit-lines)
 
 ;;comenting
 (global-set-key (kbd "C-x C-;") 'comment-region)

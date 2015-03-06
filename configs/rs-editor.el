@@ -64,4 +64,7 @@
 ;; Show current function in modeline.
 (which-function-mode)
 
+;;'y' and 'n' instea 'yes' or 'no'
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (provide 'rs-editor)
