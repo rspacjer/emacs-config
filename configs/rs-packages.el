@@ -34,7 +34,8 @@
     projectile
 ;;    rfringe
     web-mode
-    guru-mode)
+    guru-mode
+    magit)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
