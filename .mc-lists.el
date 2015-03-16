@@ -9,5 +9,6 @@
 
 (setq mc/cmds-to-run-once
       '(
+	mouse-select-window
 	suspend-frame
 	))

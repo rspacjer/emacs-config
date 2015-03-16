@@ -35,7 +35,8 @@
 ;;    rfringe
     web-mode
     guru-mode
-    magit)
+    magit
+    neotree)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()

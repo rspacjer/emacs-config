@@ -15,3 +15,4 @@
 (require 'rs-markdown)
 (require 'rs-javascript)
 (require 'rs-csharp)
+(require 'rs-neotree)
