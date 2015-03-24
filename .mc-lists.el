@@ -9,6 +9,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+	markdown-exdent-or-delete
 	mouse-select-window
 	suspend-frame
 	))

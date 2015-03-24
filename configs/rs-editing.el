@@ -1,6 +1,9 @@
 ;; highlight matched brackets
 (show-paren-mode 1)
 
+;; insert matching delimiters
+(electric-pair-mode 1)
+
 ;; enable cua mode (windows like copy, cut, paste)
 ;; (cua-mode t)
 ;;(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
