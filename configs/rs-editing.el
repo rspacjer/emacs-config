@@ -1,5 +1,6 @@
 ;; highlight matched brackets
 (show-paren-mode 1)
+(electric-pair-mode 1)
 
 ;; insert matching delimiters
 (electric-pair-mode 1)
@@ -7,7 +8,6 @@
 ;; enable cua mode (windows like copy, cut, paste)
 ;; (cua-mode t)
 ;;(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
-;;(transient-mark-mode 1) ;; No region when it is not highlighted
 ;;(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
 
 ;; Flyspell often slows down editing so it's turned off

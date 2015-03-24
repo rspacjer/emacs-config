@@ -19,8 +19,8 @@
 
 ;; use 10-pt Consolas as default font (for Windows)
 (if (find-font (font-spec :name "Consolas")) 
-  (set-face-attribute 'default nil
-                      :family "Consolas" :height 120))
+    (set-face-attribute 'default nil
+			:family "Consolas" :height 120))
 
 ;; set cursor as |
 (setq-default cursor-type 'bar)
@@ -38,9 +38,6 @@
 
 ;; save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
-
-;; disable wrapping lines
-;;(setq-default truncate-lines t)
 
 ;;wrap lines
 (global-visual-line-mode 1)

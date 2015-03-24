@@ -16,3 +16,5 @@
 (require 'rs-javascript)
 (require 'rs-csharp)
 (require 'rs-neotree)
+(require 'rs-snippets)
+(require 'rs-git)
