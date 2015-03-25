@@ -25,3 +25,5 @@ tramp
 /var/pcache
 ac-comphist.dat
 projectile.cache
+server
+.mc-lists.el
