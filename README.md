@@ -4,6 +4,8 @@ This configuration contains code parts from other configurations:
 ["Emacs Starter Kit" by Phil Hagelberg](https://github.com/technomancy/emacs-starter-kit)  
 ["Emacs Prelude" by Bozhidar Batsov](https://github.com/bbatsov/prelude)  
 ["ohai-emacs" by Bodil Stokke](https://github.com/bodil/ohai-emacs)  
+["emacs-for-clojure" by Daniel Higginbotham](https://github.com/flyingmachine/emacs-for-clojure)  
+
 
 ### Installation ###
 

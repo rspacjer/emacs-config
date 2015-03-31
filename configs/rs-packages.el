@@ -16,23 +16,21 @@
     cider
     clojure-mode
     clojure-mode-extra-font-locking
+    clojure-cheatsheet
+    clojure-snippets
     csharp-mode
     paredit
     ac-cider
     rainbow-delimiters
     js2-mode
-;;    js2-refactor
-;;    ac-js2
     markdown-mode
-    yasnippet
-    clojure-snippets
+    yasnippet    
     expand-region
     multiple-cursors
     browse-kill-ring
     flx
     flx-ido
     projectile
-;;    rfringe
     web-mode
     guru-mode
     magit

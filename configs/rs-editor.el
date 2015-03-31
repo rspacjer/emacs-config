@@ -3,6 +3,17 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; You cen disable menu bar, by commenting out next line. I use menu bar to discover new features of Emacs (still learning)
+;;(menu-bar-mode -1)
+
+;; disable toolbar
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
+
+;; Don't show native OS scroll bars for buffers because they're redundant
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
+
 ;; init frame size of Emacs for window system
 (when window-system
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))

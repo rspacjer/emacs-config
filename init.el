@@ -18,5 +18,3 @@
 (require 'rs-neotree)
 (require 'rs-snippets)
 (require 'rs-git)
-
- (server-start)
