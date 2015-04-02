@@ -24,14 +24,10 @@
 ;; add open recent menu
 (require 'recentf)
 (recentf-mode 1)
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 ;; disable right alt key as a modifier key - to use it for polish characters 
 (setq ns-right-alternate-modifier nil)
-
-;; use 10-pt Consolas as default font (for Windows)
-(if (find-font (font-spec :name "Consolas")) 
-    (set-face-attribute 'default nil
-			:family "Consolas" :height 120))
 
 ;; set cursor as |
 (setq-default cursor-type 'bar)

@@ -5,6 +5,8 @@
 (require 'rs-themes)
 (require 'rs-powerline)
 (require 'rs-functions)
+(require 'rs-env)
+(require 'rs-key-bindings)
 
 (require 'rs-editing)
 (require 'rs-ido)
@@ -18,3 +20,4 @@
 (require 'rs-neotree)
 (require 'rs-snippets)
 (require 'rs-git)
+(require 'rs-server)
