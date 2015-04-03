@@ -1,5 +1,7 @@
 (require 'erc)
-(load "~/.emacs.d/.erc-auth")
+
+(when (file-readable-p "~/.emacs.d/.erc-auth")
+  (load "~/.emacs.d/.erc-auth"))
 
 ;; Interpret mIRC-style color commands in IRC chats
 (setq erc-interpret-mirc-color t)
