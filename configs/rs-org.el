@@ -6,4 +6,7 @@
 (setq org-startup-indented t)
 (setq org-completion-use-ido t)
 
+;; add timestamp to DONE items
+(setq org-log-done 'time)
+
 (provide 'rs-org)

@@ -23,4 +23,7 @@ This configuration contains code parts from other configurations:
   windmove-left: `C-c <left>`  
   windmove-right: `C-c <right>`  
   windmove-up: `C-c <up>`  
-  windmove-down: `C-c <down>`  
+  windmove-down: `C-c <down>`
+
+To reload any configuration file, you can execute:  
+`C-x` `load-file` and thit `enter` twice
