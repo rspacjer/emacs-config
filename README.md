@@ -9,6 +9,16 @@ This configuration contains code parts from other configurations:
 
 ### Installation ###
 
+### Configuration ###
+
+#### Irc (Erc) ####
+
+To set the username and password for Erc (an IRC client) package, please create `.erc-auth.el` file in `.emacs.d` folder and add those two line there:
+```
+(setq erc-nick "your_username")  
+(setq erc-password "your_irc_password")  
+```
+
 ### Used themes ###
 
 [Tomorrow Theme](https://github.com/ChrisKempson/Tomorrow-Theme) by Chris Kempson  
