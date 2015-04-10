@@ -10,7 +10,8 @@
 ;; from Emacs Prelude by Bozhidar Batsov
 ;; https://github.com/bbatsov/prelude/blob/master/core/prelude-packages.el
 (defvar prelude-packages 
-  '(powerline
+  '(f
+    powerline
     auto-complete
     auto-indent-mode
     cider

@@ -9,4 +9,14 @@
 ;; add timestamp to DONE items
 (setq org-log-done 'time)
 
+(require 'f)
+(defun get-all-org-files ()
+  (when (getenv "ORG")
+    (f-files (getenv "ORG")
+	     (lambda (file) (equal (f-ext file) "org")) t)))
+
+;; when there is defined "ORG" system environment variable (a path),
+;; then all *.org file from this path are loaded for org-mode agenda
+(setq org-agenda-files (get-all-org-files))
+
 (provide 'rs-org)
