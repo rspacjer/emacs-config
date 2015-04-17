@@ -5,66 +5,72 @@
              '("gnu" . "http://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives
 	     '("stable-melpa" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
-;; from Emacs Prelude by Bozhidar Batsov
-;; https://github.com/bbatsov/prelude/blob/master/core/prelude-packages.el
-(defvar prelude-packages 
+(defvar rs-packages
+  '(flycheck
+    clj-refactor)
+  "A list of packages that should be installed from melpa repository.")
+
+(defvar rs-stable-packages 
   '(f
     powerline
-    auto-complete
+    company
     auto-indent-mode
     cider
     clojure-mode
     clojure-mode-extra-font-locking
     clojure-cheatsheet
     clojure-snippets
-    csharp-mode
+    flycheck-clojure
     paredit
-    ac-cider
+    csharp-mode
     rainbow-delimiters
     js2-mode
     markdown-mode
     yasnippet    
     expand-region
     multiple-cursors
-    browse-kill-ring
     flx
     flx-ido
     projectile
     web-mode
-    guru-mode
     magit
     neotree)
-  "A list of packages to ensure are installed at launch.")
+  "A list of packages that should be installed from stable-melpa repository.")
 
-(defun prelude-packages-installed-p ()
-  "Check if all packages in `prelude-packages' are installed."
-  (every #'package-installed-p prelude-packages))
+(defun rs-all-packages-installed ()
+  (and (every #'package-installed-p rs-packages)
+       (every #'package-installed-p rs-stable-packages)))
 
-(defun prelude-require-package (package)
-  "Install PACKAGE unless already installed."
-  (unless (memq package prelude-packages)
-    (add-to-list 'prelude-packages package))
-  (unless (package-installed-p package)
-    (package-install package)))
+(defun rs-pin-packages (repo packages)
+  (mapc (lambda (pck)
+	  (add-to-list 'package-pinned-packages (cons pck repo))) packages))
 
-(defun prelude-require-packages (packages)
-  "Ensure PACKAGES are installed.
-Missing packages are installed automatically."
-  (mapc #'prelude-require-package packages))
+(defun rs-install-package-when-required (pck)
+  (unless (package-installed-p pck)
+    (package-install pck)))
 
-(defun prelude-install-packages ()
-  "Install all packages listed in `prelude-packages'."
-  (unless (prelude-packages-installed-p)
+(defun rs-install-packages (packages)
+  (mapc #'rs-install-package-when-required packages))
+
+(rs-pin-packages "melpa" rs-packages)
+(rs-pin-packages "stable-melpa" rs-stable-packages)
+
+(defun rs-install-all-packages ()
+  "Install all packages from `rs-packages' and `rs-stable-packages' lists."
+  (unless (rs-all-packages-installed)
     ;; check for new packages (package versions)
     (message "%s" "Emacs is now refreshing its package database...")
     (package-refresh-contents)
     (message "%s" " done.")
     ;; install the missing packages
-    (prelude-require-packages prelude-packages)))
+    (rs-install-packages rs-packages)
+    (rs-install-packages rs-stable-packages)))
 
 ;; run package installation
-(prelude-install-packages)
+(rs-install-all-packages)
 
 (provide 'rs-packages)

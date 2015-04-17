@@ -10,6 +10,7 @@
 
 (require 'rs-editing)
 (require 'rs-ido)
+(require 'rs-company)
 (require 'rs-shell)
 (require 'rs-irc)
 (require 'rs-org)

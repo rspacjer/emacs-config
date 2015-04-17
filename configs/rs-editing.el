@@ -1,6 +1,5 @@
 ;; highlight matched brackets
 (show-paren-mode 1)
-(electric-pair-mode 1)
 
 ;; insert matching delimiters
 (electric-pair-mode 1)
@@ -17,18 +16,18 @@
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
+;;(require 'auto-complete)
+;;(require 'auto-complete-config)
+;(ac-config-default)
 
 ;; dirty fix for having AC everywhere
-(define-globalized-minor-mode real-global-auto-complete-mode
-  auto-complete-mode (lambda ()
-                       (if (not (minibufferp (current-buffer)))
-                         (auto-complete-mode 1))
-                       ))
+;; (define-globalized-minor-mode real-global-auto-complete-mode
+;;   auto-complete-mode (lambda ()
+;;                        (if (not (minibufferp (current-buffer)))
+;;                          (auto-complete-mode 1))
+;;                        ))
 
-(real-global-auto-complete-mode t)
+;; (real-global-auto-complete-mode t)
 
 ;; whitespace-mode config
 (require 'whitespace)
