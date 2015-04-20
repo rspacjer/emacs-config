@@ -21,4 +21,5 @@
 (require 'rs-neotree)
 (require 'rs-snippets)
 (require 'rs-git)
+(require 'rs-elisp)
 (require 'rs-server)

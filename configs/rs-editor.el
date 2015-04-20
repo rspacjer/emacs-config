@@ -24,6 +24,9 @@
 ;; add open recent menu
 (require 'recentf)
 (recentf-mode 1)
+;; ignore .ido.last file from recent files
+;; if this doesn't work, execut recentf-cleanup command
+(add-to-list 'recentf-exclude "\\.ido\\.last")
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 ;; disable right alt key as a modifier key - to use it for polish characters 
