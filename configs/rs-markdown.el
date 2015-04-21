@@ -1,6 +1,6 @@
 (require 'markdown-mode)
 
-(when window-system
+(when (eq system-type 'windows-nt)
   (custom-set-variables
  '(markdown-command
    "pandoc -f markdown -t html5 -s --mathjax --highlight-style pygments")))

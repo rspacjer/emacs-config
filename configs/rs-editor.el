@@ -1,10 +1,6 @@
-;; use utf-8 everywhere
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
-
-;; You cen disable menu bar, by commenting out next line. I use menu bar to discover new features of Emacs (still learning)
-;;(menu-bar-mode -1)
+;; You cen disable menu bar, by uncommenting next two line. I use menu bar to discover new features of Emacs (still learning)
+;; (when (fboundp 'menu-bar-mode)
+;;   (menu-bar-mode -1))
 
 ;; disable toolbar
 (when (fboundp 'tool-bar-mode)

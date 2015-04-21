@@ -1,5 +1,10 @@
 (add-to-list 'load-path "~/.emacs.d/configs")
 
+;; use utf-8 everywhere
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
 (require 'rs-packages)
 (require 'rs-editor)
 (require 'rs-themes)

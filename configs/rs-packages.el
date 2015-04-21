@@ -11,7 +11,8 @@
 
 (defvar rs-packages
   '(flycheck
-    clj-refactor)
+    clj-refactor
+    paredit)
   "A list of packages that should be installed from melpa repository.")
 
 (defvar rs-stable-packages 
@@ -24,8 +25,7 @@
     clojure-mode-extra-font-locking
     clojure-cheatsheet
     clojure-snippets
-    flycheck-clojure
-    paredit
+    flycheck-clojure    
     csharp-mode
     rainbow-delimiters
     js2-mode

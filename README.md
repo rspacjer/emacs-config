@@ -13,7 +13,7 @@ This configuration contains code parts from other configurations:
 
 #### Irc (Erc) ####
 
-To set the username and password for Erc (an IRC client) package, please create `.erc-auth.el` file in `.emacs.d` folder and add those two line there:
+To set the username and password for Erc (an IRC client) package, please create `.erc-auth.el` file in `.emacs.d` folder and add those two lines there:
 ```
 (setq erc-nick "your_username")  
 (setq erc-password "your_irc_password")  

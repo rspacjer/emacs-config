@@ -25,7 +25,7 @@
 	  (lambda ()
 	    (clj-refactor-mode 1)
 	    ;; insert keybinding setup here
-	    (cljr-add-keybindings-with-prefix "C-c RET")))
+	    (cljr-add-keybindings-with-prefix "C-c C-m")))
 
 (add-hook 'clojure-mode-hook (lambda () (yas/minor-mode 1)))
 
