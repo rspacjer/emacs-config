@@ -12,7 +12,9 @@
 (defvar rs-packages
   '(flycheck
     clj-refactor
-    paredit)
+    paredit
+    powershell
+    fiplr) ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
   "A list of packages that should be installed from melpa repository.")
 
 (defvar rs-stable-packages 
@@ -35,7 +37,6 @@
     multiple-cursors
     flx
     flx-ido
-    projectile
     web-mode
     magit
     neotree)

@@ -27,4 +27,5 @@
 (require 'rs-snippets)
 (require 'rs-git)
 (require 'rs-elisp)
+(require 'rs-fiplr)
 (require 'rs-server)

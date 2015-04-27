@@ -9,6 +9,16 @@ This configuration contains code parts from other configurations:
 
 ### Installation ###
 
+#### Windows ####
+
+To be able to work properly with all pacakges you should install [MinGW](http://www.mingw.org/). You should install at least:
+
+- `find`
+- `grep`
+- `diff`
+
+If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work. If you change the directory, then please change the path in `\config\rs-env.el` file.
+
 ### Configuration ###
 
 #### Irc (Erc) ####
@@ -37,3 +47,11 @@ To set the username and password for Erc (an IRC client) package, please create 
 
 To reload any configuration file, you can execute:  
 `C-x` `load-file` and thit `enter` twice
+
+#### [Fiplr - Find in Project for Emacs](https://github.com/grizzl/fiplr) ####
+
+Commands:
+
+- Find files: M-x fiplr-find-file RET (key binding `M-p`)
+- Find directories: M-x fiplr-find-directory RET
+- Clear caches: M-x fiplr-clear-cache RET
