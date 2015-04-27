@@ -11,13 +11,23 @@ This configuration contains code parts from other configurations:
 
 #### Windows ####
 
-To be able to work properly with all pacakges you should install [MinGW](http://www.mingw.org/). You should install at least:
+Emacs and many its packages work in assumption of the Unix-like host operating system. This makes that some features don't work on Windows OS.
+
+To solve this problem you can install  [MinGW](http://www.mingw.org/) with at least those packages:
 
 - `find`
 - `grep`
 - `diff`
 
-If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work. If you change the directory, then please change the path in `\config\rs-env.el` file.
+If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work good. If you change the directory, then please change this path in `\config\rs-env.el` file.
+
+### Markdown ###
+
+To be able to generate HTML (or other formats) from markdown you can install [Pandoc](http://pandoc.org/)
+
+### Spell checker ###
+
+To be able to check spelling in the buffer, you should install [Aspell](http://aspell.net/) (for [Windows](http://aspell.net/win32/))
 
 ### Configuration ###
 
@@ -46,7 +56,7 @@ To set the username and password for Erc (an IRC client) package, please create 
   windmove-down: `C-c <down>`
 
 To reload any configuration file, you can execute:  
-`C-x` `load-file` and thit `enter` twice
+`C-x` `load-file` and then hit `enter` twice
 
 #### [Fiplr - Find in Project for Emacs](https://github.com/grizzl/fiplr) ####
 
