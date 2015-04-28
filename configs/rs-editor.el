@@ -70,4 +70,16 @@
 ;;'y' and 'n' instea 'yes' or 'no'
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(add-hook 'rs/windows-os-hook
+	  (lambda ()
+	    (if (find-font (font-spec :name "Consolas"))
+		(set-face-attribute 'default nil
+				    :family "Consolas" :height 120))))
+
+(add-hook 'rs/osx-os-hook
+	  (lambda ()
+	    (if (find-font (font-spec :name "DejaVu Sans Mono-10"))
+		(set-face-attribute 'default nil
+				    :family "DejaVu Sans Mono-10" :height 120))))
+
 (provide 'rs-editor)

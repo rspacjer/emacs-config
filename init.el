@@ -6,14 +6,15 @@
 (prefer-coding-system 'utf-8)
 
 (require 'rs-packages)
+(require 'rs-functions)
+(require 'rs-env)
+
 (require 'rs-editor)
 (require 'rs-themes)
 (require 'rs-powerline)
-(require 'rs-functions)
-(require 'rs-env)
 (require 'rs-key-bindings)
-
 (require 'rs-editing)
+
 (require 'rs-ido)
 (require 'rs-company)
 (require 'rs-shell)
@@ -29,3 +30,5 @@
 (require 'rs-elisp)
 (require 'rs-fiplr)
 (require 'rs-server)
+
+(rs/invoke-current-operating-system-hooks)

@@ -39,7 +39,8 @@
     flx-ido
     web-mode
     magit
-    neotree)
+    neotree
+    exec-path-from-shell)
   "A list of packages that should be installed from stable-melpa repository.")
 
 ;; The below code is inspired by similar code from Emacs Prelude by Bozhidar Batsov
