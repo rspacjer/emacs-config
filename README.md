@@ -9,7 +9,7 @@ This config is inspired and can contain code parts from those configurations:
 - ["ohai-emacs" by Bodil Stokke](https://github.com/bodil/ohai-emacs)
 - ["emacs-for-clojure" by Daniel Higginbotham](https://github.com/flyingmachine/emacs-for-clojure)
 
-I test it mostly on Windows machine, but it should work also on OSX and Linux.
+I test it mostly on `Windows` machine, but it should also work on `OSX` and `Linux`.
 
 ### Installation ###
 

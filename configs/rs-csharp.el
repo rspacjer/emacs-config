@@ -5,8 +5,7 @@
      ;;(require 'flymake)
      ;;(flymake-mode 1)
      (require 'yasnippet)
-     (yas/minor-mode-on)
-     (require 'rfringe))
+     (yas/minor-mode-on))
 
 (add-hook  'csharp-mode-hook 'my-csharp-mode-fn t)
 

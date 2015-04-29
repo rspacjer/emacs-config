@@ -37,4 +37,11 @@ Doesn't mess with special buffers."
      (--remove (eql (current-buffer) it)))
    #'kill-buffer))
 
+;; From http://stackoverflow.com/questions/235254/how-can-i-run-cygwin-bash-shell-from-within-emacs
+(defun cygwin-shell ()
+  "Run cygwin bash in shell mode."
+  (interactive)
+  (let ((explicit-shell-file-name "C:/cygwin/bin/bash"))
+    (call-interactively 'shell)))
+
 (provide 'rs-functions)

@@ -2,7 +2,7 @@
 (show-paren-mode 1)
 
 ;; insert matching delimiters
-(electric-pair-mode 1)
+;;(electric-pair-mode 1)
 
 ;; enable cua mode (windows like copy, cut, paste)
 ;; (cua-mode t)
