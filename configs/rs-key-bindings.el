@@ -8,3 +8,7 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 ;; lets try f5 as M-x replacement
 (global-set-key (kbd "<f5>") 'execute-extended-command)
+
+;; in window system it's annoying to hit `C-z`
+(when window-system
+  (global-unset-key (kbd "C-z")))
