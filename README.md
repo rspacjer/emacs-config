@@ -2,7 +2,7 @@
 
 This is my current Emacs configuration.
 
-This config is inspired and can contain code parts from those configurations:
+This config is inspired by and can contain code snippets from those configurations:
 
 - ["Emacs Starter Kit" by Phil Hagelberg](https://github.com/technomancy/emacs-starter-kit)
 - ["Emacs Prelude" by Bozhidar Batsov](https://github.com/bbatsov/prelude)
@@ -23,11 +23,11 @@ To solve this problem you can install  [MinGW](http://www.mingw.org/) with at le
 - `grep`
 - `diff`
 
-If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work good. If you change the directory, then please change this path in `\config\rs-env.el` file.
+If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work good. If you change the directory, then please change the path in `\config\rs-env.el` file.
 
 #### Markdown ####
 
-To be able to generate HTML (or other formats) from markdown you can install [Pandoc](http://pandoc.org/)
+To be able to generate HTML (or other formats) from markdown you should install [Pandoc](http://pandoc.org/)
 
 #### Spell checker ####
 
@@ -73,7 +73,7 @@ To set the username and password for Erc (an IRC client) package, please create 
 
 Commands:
 
-- Find files: M-x fiplr-find-file RET (key binding `M-p`)
+- Find files: M-x fiplr-find-file RET (key binding `F6` or `C-x f`)
 - Find directories: M-x fiplr-find-directory RET
 - Clear caches: M-x fiplr-clear-cache RET
 
