@@ -29,6 +29,7 @@
 (require 'rs-git)
 (require 'rs-elisp)
 (require 'rs-fiplr)
+(require 'rs-avy)
 (require 'rs-server)
 
 (rs/invoke-current-operating-system-hooks)

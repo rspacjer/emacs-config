@@ -11,7 +11,11 @@
 
 (defvar rs-packages
   '(flycheck
+    cider
     clj-refactor
+    flycheck-clojure
+    clojure-mode
+    clojure-mode-extra-font-locking
     paredit
     powershell
     fiplr) ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
@@ -21,13 +25,9 @@
   '(f
     powerline
     company
-    auto-indent-mode
-    cider
-    clojure-mode
-    clojure-mode-extra-font-locking
+    auto-indent-mode    
     clojure-cheatsheet
-    clojure-snippets
-    flycheck-clojure    
+    clojure-snippets        
     csharp-mode
     rainbow-delimiters
     js2-mode
@@ -40,7 +40,8 @@
     web-mode
     magit
     neotree
-    exec-path-from-shell)
+    exec-path-from-shell
+    avy)
   "A list of packages that should be installed from stable-melpa repository.")
 
 ;; The below code is inspired by similar code from Emacs Prelude by Bozhidar Batsov
