@@ -23,7 +23,8 @@
 
 (defvar rs-stable-packages 
   '(f
-    powerline
+    smart-mode-line
+    smart-mode-line-powerline-theme
     company
     auto-indent-mode    
     clojure-cheatsheet
