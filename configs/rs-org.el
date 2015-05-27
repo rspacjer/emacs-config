@@ -15,7 +15,7 @@
 
 (require 'f)
 (defun get-all-org-files ()
-  (when (getenv "ORG")
+  (when (and (getenv "ORG") (f-directory? (getenv "ORG")))
     (f-files (getenv "ORG")
 	     (lambda (file) (equal (f-ext file) "org")) t)))
 
