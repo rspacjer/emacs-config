@@ -44,4 +44,11 @@ Doesn't mess with special buffers."
   (let ((explicit-shell-file-name "C:/cygwin/bin/bash"))
     (call-interactively 'shell)))
 
+(defun new-sql-buffer ()
+  "Create new buffer with sql mode"
+  (interactive)
+  (let ((buf (generate-new-buffer "*sql*")))
+    (switch-to-buffer buf)
+    (sql-mode)))
+
 (provide 'rs-functions)
