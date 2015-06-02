@@ -11,7 +11,7 @@
 ;; clojure
 (require 'clojure-mode-extra-font-locking)
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
-(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 (add-hook 'clojure-mode-hook 'set-newline-and-indent)
 
 ;; cider
@@ -43,7 +43,7 @@
 (setq cider-repl-result-prefix ";; => ")
 
 (add-hook 'cider-repl-mode-hook 'subword-mode)
-(add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook #'smartparens-strict-mode)
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook #'company-mode)
 

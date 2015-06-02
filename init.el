@@ -17,6 +17,7 @@
 
 (require 'rs-ido)
 (require 'rs-company)
+(require 'rs-smartparens)
 (require 'rs-shell)
 (require 'rs-irc)
 (require 'rs-org)

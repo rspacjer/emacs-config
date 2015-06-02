@@ -1,5 +1,5 @@
 (require 'paredit)
-(add-hook 'emacs-lisp-mode-hook #'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook #'smartparens-strict-mode)
 
 ;; rainbow-delimiters
 (require 'rainbow-delimiters)
