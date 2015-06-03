@@ -80,4 +80,4 @@ Commands:
 #### Other ####
 
 To reload any configuration file, you can execute:  
-`C-x` `load-file` and then hit `enter` twice
+`C-x` `eval-buffer` and then hit `enter`.

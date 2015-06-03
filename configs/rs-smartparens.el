@@ -41,6 +41,9 @@
   (local-set-key (kbd "M-F") 'sp-forward-symbol)
   (local-set-key (kbd "M-B") 'sp-backward-symbol))
 
-(add-hook 'smartparens-strict-mode-hook 'rs-add-smartparens-strict-keys)  
+(add-hook 'smartparens-strict-mode-hook 'rs-add-smartparens-strict-keys)
+
+;; For inserting links in org-mode it's easier if the closing bracket isn't added
+(sp-local-pair 'org-mode "[" nil :actions nil)
 
 (provide 'rs-smartparens)
