@@ -25,6 +25,7 @@
 (require 'rs-markdown)
 (require 'rs-javascript)
 (require 'rs-csharp)
+(require 'rs-haskell)
 (require 'rs-neotree)
 (require 'rs-snippets)
 (require 'rs-git)

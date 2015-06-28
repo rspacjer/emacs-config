@@ -18,6 +18,7 @@
     clojure-mode-extra-font-locking
     ;;paredit
     powershell
+    flycheck-haskell
     fiplr) ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
   "A list of packages that should be installed from melpa repository.")
 
@@ -43,7 +44,8 @@
     neotree
     exec-path-from-shell
     avy
-    smartparens)
+    smartparens
+    haskell-mode)
   "A list of packages that should be installed from stable-melpa repository.")
 
 ;; The below code is inspired by similar code from Emacs Prelude by Bozhidar Batsov
