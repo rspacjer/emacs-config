@@ -11,12 +11,7 @@
 
 (defvar rs-packages
   '(flycheck
-    cider
-    clj-refactor
     flycheck-clojure
-    clojure-mode
-    clojure-mode-extra-font-locking
-    ;;paredit
     powershell
     fiplr) ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
   "A list of packages that should be installed from melpa repository.")
@@ -26,7 +21,11 @@
     smart-mode-line
     smart-mode-line-powerline-theme
     company
-    auto-indent-mode    
+    auto-indent-mode
+    cider
+    clj-refactor    
+    clojure-mode
+    clojure-mode-extra-font-locking
     clojure-cheatsheet
     clojure-snippets        
     csharp-mode
