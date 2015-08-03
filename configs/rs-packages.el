@@ -12,8 +12,8 @@
 (defvar rs-packages
   '(flycheck
     flycheck-clojure
-    powershell
     flycheck-haskell
+    powershell    
     fiplr) ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
   "A list of packages that should be installed from melpa repository.")
 

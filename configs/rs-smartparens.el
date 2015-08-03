@@ -46,8 +46,7 @@
 ;; For inserting links in org-mode it's easier if the closing bracket isn't added
 (sp-local-pair 'org-mode "[" nil :actions nil)
 
-;; set highlighting of newly entered pair to: cornflower blue
-(custom-set-faces
- '(sp-pair-overlay-face ((t (:background "cornflower blue")))))
+;; disable highlighting for opened bracket
+(setq sp-highlight-pair-overlay nil)
 
 (provide 'rs-smartparens)
