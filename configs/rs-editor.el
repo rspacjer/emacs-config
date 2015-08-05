@@ -12,7 +12,9 @@
 
 ;; init frame size of Emacs for window system
 (when window-system
-  (setq frame-title-format '("emacs: " buffer-file-name ("%b")))
+  (setq frame-title-format '("emacs: " (:eval (if (buffer-file-name)
+						  (abbreviate-file-name (buffer-file-name))
+						"%b"))))
   (tooltip-mode -1)
   (mouse-wheel-mode t)
   (setq initial-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40))))

@@ -33,5 +33,6 @@
 (require 'rs-fiplr)
 (require 'rs-avy)
 (require 'rs-server)
+(require 'rs-web)
 
 (rs/invoke-current-operating-system-hooks)
