@@ -1,4 +1,5 @@
 (require 'web-mode)
+(require 'yasnippet)
 
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
@@ -8,6 +9,11 @@
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 2))
 
-(add-hook 'web-mode-hook  'web-mode-indent-hook)
+(defun web-mode-snippets-hook ()
+  (yas-activate-extra-mode 'html-mode)
+  (yas-activate-extra-mode 'js-mode))
+
+(add-hook 'web-mode-hook 'web-mode-indent-hook)
+(add-hook 'web-mode-hook 'web-mode-snippets-hook)
 
 (provide 'rs-web)
