@@ -18,4 +18,8 @@
 (custom-set-faces
  '(js2-external-variable ((t (:foreground "OrangeRed1" :underline t)))))
 
+(custom-set-variables
+ '(js2-basic-offset 2)  
+ '(js2-bounce-indent-p t))
+
 (provide 'rs-javascript)

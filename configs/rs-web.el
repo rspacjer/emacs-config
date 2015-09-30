@@ -13,7 +13,11 @@
   (yas-activate-extra-mode 'html-mode)
   (yas-activate-extra-mode 'js-mode))
 
+(defun web-mode-minor-modes-hook ()
+  (js2-minor-mode))
+
 (add-hook 'web-mode-hook 'web-mode-indent-hook)
 (add-hook 'web-mode-hook 'web-mode-snippets-hook)
+(add-hook 'web-mode-hook 'web-mode-minor-modes-hook)
 
 (provide 'rs-web)
