@@ -34,5 +34,6 @@
 (require 'rs-avy)
 (require 'rs-server)
 (require 'rs-web)
+(require 'rs-thesaurus)
 
 (rs/invoke-current-operating-system-hooks)

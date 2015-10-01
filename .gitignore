@@ -29,3 +29,4 @@ server
 .mc-lists.el
 .erc-auth.el
 bookmarks
+.apikey.txt
