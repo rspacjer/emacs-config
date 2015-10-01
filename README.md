@@ -77,6 +77,12 @@ Commands:
 - Find directories: M-x fiplr-find-directory RET
 - Clear caches: M-x fiplr-clear-cache RET
 
+####Thesaurus####
+
+This configuration uses [thesaurus](http://www.emacswiki.org/cgi-bin/wiki/thesaurus.el) package.
+
+To use it, first you need to go to the http://words.bighugelabs.com/ page and register (no cost) to get an API key. Then create `.apikey.txt` file in the `.emacs.d` folder and put this API key in it (as plain text). From now on you can look for similar words using `C-x t` command.
+
 #### Other ####
 
 To reload any configuration file, you can execute:  
