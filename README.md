@@ -63,7 +63,7 @@ To set the username and password for Erc (an IRC client) package, please create 
 * Increase / decrease font size: `C-x C-+` or `C-x C--`
 * Restore default font size: `C-x C-0`
 * Expand region: `C-=`
-* Change window:  
+* Change window or frame:  
   windmove-left: `C-c <left>`  
   windmove-right: `C-c <right>`  
   windmove-up: `C-c <up>`  
