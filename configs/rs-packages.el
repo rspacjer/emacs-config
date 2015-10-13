@@ -15,7 +15,8 @@
     flycheck-haskell
     powershell    
     fiplr ;; fiplr - https://github.com/grizzl/fiplr If you use Windows OS, look at rs-env.el
-    thesaurus) 
+    thesaurus
+    framemove) 
   "A list of packages that should be installed from melpa repository.")
 
 (defvar rs-stable-packages 
