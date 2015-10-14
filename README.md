@@ -25,6 +25,12 @@ To solve this problem you can install  [MinGW](http://www.mingw.org/) with at le
 
 If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work good. If you change the directory, then please change the path in `\config\rs-env.el` file.
 
+#### Org-mode ####
+
+You can define `ORG` system environment variable that will point to a folder where all your org files exist. Those files will be used create agenda for `org-mode`.
+
+Additionally at startup of `Emacs` the `gtd.org` file (my todo list) from path defined in `ORG` system environment variable will be tried to open.
+
 #### Markdown ####
 
 To be able to generate HTML (or other formats) from markdown you should install [Pandoc](http://pandoc.org/)

@@ -23,4 +23,14 @@
 ;; then all *.org file from this path are loaded for org-mode agenda
 (setq org-agenda-files (get-all-org-files))
 
+;; opens give file name after starting Emacs
+(defun open-org-file-at-emacs-startup (file-name)
+  (when (getenv "ORG")
+    (let ((file (f-join (getenv "ORG") file-name)))
+      (when (f-exists? file)
+	(find-file file)))))
+
+;; open gtd.org file from path defined in "ORG" system environment
+(open-org-file-at-emacs-startup "gtd.org")
+
 (provide 'rs-org)
