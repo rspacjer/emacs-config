@@ -51,4 +51,12 @@ Doesn't mess with special buffers."
     (switch-to-buffer buf)
     (sql-mode)))
 
+;; create new markdown file for blog post in format yyyy-mm-dd-title
+(defun new-blog-post (buffor-name)
+  (interactive "sBlog tile:")
+  (let ((buf (generate-new-buffer
+	      (concat (format-time-string "%Y-%m-%d") "-" buffor-name ".markdown"))))
+    (switch-to-buffer buf)
+    (markdown-mode)))
+
 (provide 'rs-functions)

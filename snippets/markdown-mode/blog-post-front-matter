@@ -1,0 +1,16 @@
+#name: blog post front matter
+#key: front
+# --
+---
+layout: post.html
+title: ${1:`(replace-regexp-in-string "-" " "
+			  (replace-regexp-in-string ".markdown" ""
+						    (replace-regexp-in-string
+						     "^[0-9]+-[0-9]+-[0-9]+-"
+						     ""
+						     (buffer-name))))`}
+date: `(format-time-string "%Y-%m-%d")`
+categories:
+  - $5
+---
+$0
