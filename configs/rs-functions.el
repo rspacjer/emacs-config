@@ -52,11 +52,16 @@ Doesn't mess with special buffers."
     (sql-mode)))
 
 ;; create new markdown file for blog post in format yyyy-mm-dd-title
-(defun new-blog-post (buffor-name)
+(defun new-blog-post (name)
   (interactive "sBlog tile:")
   (let ((buf (generate-new-buffer
-	      (concat (format-time-string "%Y-%m-%d") "-" buffor-name ".markdown"))))
+	      (concat (format-time-string "%Y-%m-%d") "-" name ".markdown"))))
     (switch-to-buffer buf)
     (markdown-mode)))
+
+;; copy buffer name to kill ring - so you can easily paste it into save file mini buffer
+(defun buffer-name-to-kill-ring ()
+  (interactive)
+  (kill-new (buffer-name)))
 
 (provide 'rs-functions)
