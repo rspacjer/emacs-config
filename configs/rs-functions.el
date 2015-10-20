@@ -51,13 +51,24 @@ Doesn't mess with special buffers."
     (switch-to-buffer buf)
     (sql-mode)))
 
+(defun blog-safe-file-name (name)
+    (replace-regexp-in-string "[[:space:]]+" "-"
+			      (concat (format-time-string "%Y-%m-%d") "-"
+				      (replace-regexp-in-string "\\.+" "-"
+								(replace-regexp-in-string "[:;]+" "" name))
+				      ".markdown")))
+
 ;; create new markdown file for blog post in format yyyy-mm-dd-title
-(defun new-blog-post (name)
+(defun blog-create-post (name)
   (interactive "sBlog tile:")
   (let ((buf (generate-new-buffer
-	      (concat (format-time-string "%Y-%m-%d") "-" name ".markdown"))))
+	      (kill-new (blog-safe-file-name name)))))
     (switch-to-buffer buf)
     (markdown-mode)))
+
+(defun blog-create-file-name-to-kill-ring (name)
+  (interactive "sBlog tile:")
+  (kill-new (blog-safe-file-name name)))
 
 ;; copy buffer name to kill ring - so you can easily paste it into save file mini buffer
 (defun buffer-name-to-kill-ring ()
