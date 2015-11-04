@@ -74,16 +74,16 @@ To set the username and password for Erc (an IRC client) package, please create 
   windmove-right: `C-c <right>`  
   windmove-up: `C-c <up>`  
   windmove-down: `C-c <down>`
-* For [avy](https://github.com/abo-abo/avy) package:
-  `C-c j` - go to char
+* For [avy](https://github.com/abo-abo/avy) package:  
+  `C-c j` - go to char  
   `M-g f` - go to line
-* Multiple cursors configuration
-  _From: https://github.com/bodil/ohai-emacs/ _
-  Use `<insert>` to place a cursor on the next match for the current selection.
-  Use `S-<insert>` to place one on the previous match.
-  Use `C-'` to use extended mark mode, giving you more control.
-  Use `C-"` to place cursors on all matches.
-  Select a region and `C-M-'` to place cursors on each line of the selection.
+* Multiple cursors configuration  
+  _From: https://github.com/bodil/ohai-emacs/ _  
+  Use `<insert>` to place a cursor on the next match for the current selection.  
+  Use `S-<insert>` to place one on the previous match.  
+  Use `C-'` to use extended mark mode, giving you more control.  
+  Use `C-"` to place cursors on all matches.  
+  Select a region and `C-M-'` to place cursors on each line of the selection.  
   Bonus: `<insert>` key no longer activates overwrite mode.
 * Comment region: `C-x C-;`
   
