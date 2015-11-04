@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: clojure code block
+# key: cb
+# --
+\`\`\`clojure
+$0
+\`\`\`
+
