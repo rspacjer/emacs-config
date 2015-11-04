@@ -27,7 +27,7 @@ If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should w
 
 #### Org-mode ####
 
-You can define `ORG` system environment variable that will point to a folder where all your org files exist. Those files will be used create agenda for `org-mode`.
+You can define `ORG` system environment variable that will point to a folder where all your org files exist. Those files will be used to create agenda for `org-mode`.
 
 Additionally at startup of `Emacs` the `gtd.org` file (my todo list) from path defined in `ORG` system environment variable will be tried to open.
 
@@ -74,7 +74,19 @@ To set the username and password for Erc (an IRC client) package, please create 
   windmove-right: `C-c <right>`  
   windmove-up: `C-c <up>`  
   windmove-down: `C-c <down>`
-
+* For [avy](https://github.com/abo-abo/avy) package:
+  `C-c j` - go to char
+  `M-g f` - go to line
+* Multiple cursors configuration
+  _From: https://github.com/bodil/ohai-emacs/ _
+  Use `<insert>` to place a cursor on the next match for the current selection.
+  Use `S-<insert>` to place one on the previous match.
+  Use `C-'` to use extended mark mode, giving you more control.
+  Use `C-"` to place cursors on all matches.
+  Select a region and `C-M-'` to place cursors on each line of the selection.
+  Bonus: `<insert>` key no longer activates overwrite mode.
+* Comment region: `C-x C-;`
+  
 #### [Fiplr](https://github.com/grizzl/fiplr) - Find in Project for Emacs ####
 
 Commands:

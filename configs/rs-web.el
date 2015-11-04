@@ -13,6 +13,7 @@
   (yas-activate-extra-mode 'html-mode)
   (yas-activate-extra-mode 'js-mode))
 
+;; for React.js is helpful to have js2 mode in web-mode
 (defun web-mode-minor-modes-hook ()
   (js2-minor-mode))
 

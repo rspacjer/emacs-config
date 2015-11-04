@@ -9,7 +9,9 @@ title: "${1:`(replace-regexp-in-string "-" " "
 						     "^[0-9]+-[0-9]+-[0-9]+-"
 						     ""
 						     (buffer-name))))`}"
-date: `(format-time-string "%Y-%m-%d")`
+date: `(concat (format-time-string "%Y-%m-%dT%T")
+	((lambda (x) (concat (substring x 0 3) ":" (substring x 3 5)))
+	 (format-time-string "%z")))`
 categories:
   - $5
 ---
