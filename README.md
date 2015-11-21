@@ -105,3 +105,7 @@ To use it, first you need to go to the http://words.bighugelabs.com/ page and re
 
 To reload any configuration file, you can execute:  
 `C-x` `eval-buffer` and then hit `enter`.
+
+#### AutoHotkey  ####
+
+For `Windows` users there is `script.ahk` file in the root folder. It's [AutoHotkey][http://ahkscript.org/] script, that allows remapping `Caps Lock` key to `Ctrl` when `Emacs` is started. To be able to use it, you have to install AutoHotkey. The shortcut to this script can be placed in `Startup` folder to auto start on `Windows` startup - you can read full instruction [here][https://autohotkey.com/docs/FAQ.htm#Startup].
