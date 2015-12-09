@@ -89,43 +89,43 @@ To set the username and password for Erc (an IRC client) package, please create 
 
 #### Smartparens ####
 
-`C-M-f` - Jump after the next balanced expression. If inside one and there is no forward exp., jump after its closing pair.
-`C-M-b` - Jump before the previous balanced expression. If inside one and there is no previous exp., jump before its opening pair.
+* `C-M-f` - Jump after the next balanced expression. If inside one and there is no forward exp., jump after its closing pair.
+* `C-M-b` - Jump before the previous balanced expression. If inside one and there is no previous exp., jump before its opening pair.
 
-`C-M-d` - Jump after the opening pair of next balanced expression. This effectively descends one level down in the `expression hierarchy`. If there is no expression to descend to, jump after current expression's opening pair. This can be used to quickly navigate to the beginning of current balanced expression.
-`C-M-a` - Jump before the closing pair of previous balanced expression. If there is no expr. to descend to, jump before current expression's closing pair.
-`C-S-d` - Jump to the beginning of current sexp, that is after the opening delimiter.
-`C-S-a` - Jump to the end of current sexp, that is before the closing delimiter.
+* `C-M-d` - Jump after the opening pair of next balanced expression. This effectively descends one level down in the `expression hierarchy`. If there is no expression to descend to, jump after current expression's opening pair. This can be used to quickly navigate to the beginning of current balanced expression.
+* `C-M-a` - Jump before the closing pair of previous balanced expression. If there is no expr. to descend to, jump before current expression's closing pair.
+* `C-S-d` - Jump to the beginning of current sexp, that is after the opening delimiter.
+* `C-S-a` - Jump to the end of current sexp, that is before the closing delimiter.
 
-`C-M-e` Jump up one level from the current balanced expression. This means skipping all the enclosed expressions within this and then jumping after the closing pair. For example (if (= a b) | (some call) (some other call)) -> (if ...)|.
-`C-M-u` - Jump up backwards one level from the current balanced expressions. This means skipping all the enclosed expressions within this backwards and then jumping before the opening pair.
-`C-M-t` sp-transpose-sexp
+* `C-M-e` Jump up one level from the current balanced expression. This means skipping all the enclosed expressions within this and then jumping after the closing pair. For example (if (= a b) | (some call) (some other call)) -> (if ...)|.
+* `C-M-u` - Jump up backwards one level from the current balanced expressions. This means skipping all the enclosed expressions within this backwards and then jumping before the opening pair.
+* `C-M-t` sp-transpose-sexp
 
-`C-M-n` - Jump to the beginning of following balanced expression. If there is no following expression on the current level, jump one level up backward, effectively doing sp-backward-up-sexp.
-`C-M-p` - Jump to the end of the previous balanced expression. If there is no previous expression on the current level, jupm one level up forward, effectively doing sp-up-sexp.
+* `C-M-n` - Jump to the beginning of following balanced expression. If there is no following expression on the current level, jump one level up backward, effectively doing sp-backward-up-sexp.
+* `C-M-p` - Jump to the end of the previous balanced expression. If there is no previous expression on the current level, jupm one level up forward, effectively doing sp-up-sexp.
 
-`C-M-k` sp-kill-sexp
-`C-M-w` sp-copy-sexp
+* `C-M-k` sp-kill-sexp
+* `C-M-w` sp-copy-sexp
 
-`M-<delete>` sp-unwrap-sexp
-`M-<backspace>` sp-backward-unwrap-sexp
+* `M-<delete>` sp-unwrap-sexp
+* `M-<backspace>` sp-backward-unwrap-sexp
 
-`C-<right>` sp-forward-slurp-sexp
-`C-<left>` sp-forward-barf-sexp
-`C-M-<left>` sp-backward-slurp-sexp
-`C-M-<right>` sp-backward-barf-sexp
+* `C-<right>` sp-forward-slurp-sexp
+* `C-<left>` sp-forward-barf-sexp
+* `C-M-<left>` sp-backward-slurp-sexp
+* `C-M-<right>` sp-backward-barf-sexp
 
-`M-D` sp-splice-sexp
-`C-M-<delete>` sp-splice-sexp-killing-forward
-`C-M-<backspace>` sp-splice-sexp-killing-backward
-`C-S-<backspace>` sp-splice-sexp-killing-around
+* `M-D` sp-splice-sexp
+* `C-M-<delete>` sp-splice-sexp-killing-forward
+* `C-M-<backspace>` sp-splice-sexp-killing-backward
+* `C-S-<backspace>` sp-splice-sexp-killing-around
 
-`C-]` sp-select-next-thing-exchange
-`C-<left_bracket>` sp-select-previous-thing
-`C-M-]` sp-select-next-thing
+* `C-]` sp-select-next-thing-exchange
+* `C-<left_bracket>` sp-select-previous-thing
+* `C-M-]` sp-select-next-thing
 
-`M-F` sp-forward-symbol
-`M-B` sp-backward-symbol
+* `M-F` sp-forward-symbol
+* `M-B` sp-backward-symbol
   
 #### [Fiplr](https://github.com/grizzl/fiplr) - Find in Project for Emacs ####
 
