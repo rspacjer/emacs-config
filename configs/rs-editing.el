@@ -23,6 +23,9 @@
 ;; Newline at end of file
 (setq require-final-newline t)
 
+;; Always use spaces instead of tabs
+(setq-default indent-tabs-mode nil)
+
 ;; delete the selection with a keypress
 (delete-selection-mode t)
 ;; Transient Mark mode gives you much of the standard selection-highlighting behavior of other editors
