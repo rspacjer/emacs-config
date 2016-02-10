@@ -46,7 +46,8 @@
     exec-path-from-shell
     avy
     smartparens
-    haskell-mode)
+    haskell-mode
+    helm)
   "A list of packages that should be installed from stable-melpa repository.")
 
 ;; The below code is inspired by similar code from Emacs Prelude by Bozhidar Batsov

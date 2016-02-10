@@ -15,6 +15,7 @@
 (require 'rs-key-bindings)
 (require 'rs-editing)
 
+(require 'rs-helm)
 (require 'rs-ido)
 (require 'rs-company)
 (require 'rs-smartparens)
