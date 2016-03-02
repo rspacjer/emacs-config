@@ -56,4 +56,10 @@
 ;; warm the AST cache at REPL start up
 (add-hook 'nrepl-connected-hook #'cljr-warm-ast-cache)
 
+(defun weasel-clojurescipt-repl ()
+  (interactive)
+  (insert "(do (require 'weasel.repl.websocket)
+           (cemerick.piggieback/cljs-repl
+              (weasel.repl.websocket/repl-env :ip \"0.0.0.0\" :port 9001)))"))
+
 (provide 'rs-clojure)
