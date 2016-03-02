@@ -33,4 +33,8 @@
 ;; open gtd.org file from path defined in "ORG" system environment
 (open-org-file-at-emacs-startup "gtd.org")
 
+;; Export org file to Reveal.js presentation
+;; https://github.com/yjwen/org-reveal
+(require 'ox-reveal)
+
 (provide 'rs-org)
