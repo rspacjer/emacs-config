@@ -71,8 +71,11 @@
 ;; Show current function in modeline.
 (which-function-mode)
 
-;;'y' and 'n' instea 'yes' or 'no'
+;; 'y' and 'n' instea 'yes' or 'no'
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; refresh buffer when the file was modified externally
+(global-auto-revert-mode 1)
 
 (add-hook 'rs/windows-os-hook
 	  (lambda ()
