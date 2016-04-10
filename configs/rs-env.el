@@ -6,7 +6,7 @@
   (setenv "PATH"
   (concat
    ;; Change this with your path to MSYS bin directory
-   "C:\cygwin64\bin"
+   "C:\\cygwin64\\bin;"
    (getenv "PATH"))))
 
 (add-hook 'rs/windows-os-hook 'rs/set-gnu-tools-for-windows-path)
