@@ -27,6 +27,8 @@ If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should w
 
 Alternatively you can install [Cygwin](https://www.cygwin.com/). It comes with all needed packages. If you use `Cygwin` then change path in `\config\rs-env.el` file.
 
+To have proper working `magit` package (a git client) define `HOME` system environment variable and set it to your user home path - you can read more [here](https://github.com/magit/magit/wiki/Pushing-with-Magit-from-Windows#before-starting-set-home).
+
 #### Org-mode ####
 
 You can define `ORG` system environment variable that will point to a folder where all your org files exist. Those files will be used to create agenda for `org-mode`.
