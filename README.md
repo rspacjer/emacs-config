@@ -25,6 +25,8 @@ To solve this problem you can install  [MinGW](http://www.mingw.org/) with at le
 
 If you install it in `C:\MinGW\msys\1.0\bin` directory, then everything should work good. If you change the directory, then please change the path in `\config\rs-env.el` file.
 
+Alternatively you can install [Cygwin](https://www.cygwin.com/). It comes with all needed packages. If you use `Cygwin` then change path in `\config\rs-env.el` file.
+
 #### Org-mode ####
 
 You can define `ORG` system environment variable that will point to a folder where all your org files exist. Those files will be used to create agenda for `org-mode`.
@@ -38,6 +40,8 @@ To be able to generate HTML (or other formats) from markdown you should install 
 #### Spell checker ####
 
 To be able to check spelling in the buffer, you should install [Aspell](http://aspell.net/) (for [Windows](http://aspell.net/win32/))
+
+In Windows Aspell bin folder (`\Aspell\bin`) should be added to `Path` environment variable.
 
 ### Configuration ###
 
